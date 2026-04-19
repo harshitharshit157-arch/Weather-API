@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════╗
+║          WEATHER DASHBOARD - QUICK START GUIDE               ║
+╚══════════════════════════════════════════════════════════════╝
+
+Follow these steps to run your Weather Dashboard:
+
+STEP 1: Install Python Dependencies
+────────────────────────────────────
+Open terminal/command prompt in the project folder and run:
+
+    pip install -r requirements.txt
+
+
+STEP 2: Get Your Free Weather API Key
+──────────────────────────────────────
+1. Visit: https://openweathermap.org/api
+2. Click "Sign Up" (it's FREE!)
+3. Verify your email
+4. Go to "API keys" section
+5. Copy your API key
+
+6. Open file: weather_app/views.py
+7. Find line 87 (approximately):
+   API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY'
+8. Replace with your actual key:
+   API_KEY = 'abc123your-real-key-here'
+
+
+STEP 3: Initialize Database
+────────────────────────────
+Run this command:
+
+    python manage.py migrate
+
+
+STEP 4: Start the Server
+─────────────────────────
+Run this command:
+
+    python manage.py runserver
+
+
+STEP 5: Open in Browser
+────────────────────────
+Open your web browser and go to:
+
+    http://127.0.0.1:8000/
+
+
+THAT'S IT! 🎉
+─────────────
+You should now see the Weather Dashboard!
+
+1. Select a state (e.g., "Delhi")
+2. Select a city (e.g., "New Delhi")
+3. Click "Get Weather"
+4. View the weather information!
+
+
+TROUBLESHOOTING
+───────────────
+❌ "Invalid API Key" error?
+   → Make sure you replaced YOUR_OPENWEATHERMAP_API_KEY with real key
+
+❌ Cities not loading?
+   → Check internet connection
+   → Make sure server is running (python manage.py runserver)
+
+❌ Import errors?
+   → Run: pip install -r requirements.txt
+
+
+NEED MORE HELP?
+───────────────
+Check the README.md file for detailed documentation!
+
+
+╔══════════════════════════════════════════════════════════════╗
+║  Enjoy your Weather Dashboard! 🌤️                           ║
+╚══════════════════════════════════════════════════════════════╝
